@@ -2,6 +2,8 @@
 
 这是一个给 [OpenCLI](https://github.com/jackwener/opencli) 使用的博客搜索插件。
 
+> 如果你只是想安装并使用 `dq` 搜索博客，请先查看[项目主 README](../README.md)；本文档只介绍 OpenCLI 插件。
+
 安装以后，你可以让 OpenCLI 在命令行中读取大强博客的公开文章：查看最新文章、按关键词搜索、读取单篇文章正文。
 
 ## 先分清两个命令
