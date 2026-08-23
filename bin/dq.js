@@ -106,7 +106,7 @@ async function fetchPosts() {
 	const response = await fetch(RSS_URL, {
 		headers: {
 			Accept: "application/rss+xml, application/xml, text/xml",
-			"User-Agent": "dqtx-cli/0.1.0",
+        "User-Agent": "dqtx-cli/0.1.2",
 		},
 		signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
 	});
@@ -515,7 +515,7 @@ function createInterface(posts, initialQuery = "") {
 async function main() {
 	const args = process.argv.slice(2);
 	if (args.includes("--help") || args.includes("-h")) return help();
-	if (args.includes("--version") || args.includes("-v")) return console.log("0.1.0");
+if (args.includes("--version") || args.includes("-v")) return console.log("0.1.2");
 	if (!process.stdin.isTTY || !process.stdout.isTTY) {
 		console.error("dq 需要在交互式终端中运行。请直接打开终端后输入 dq。");
 		process.exitCode = 1;
