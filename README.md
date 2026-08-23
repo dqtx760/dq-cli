@@ -28,7 +28,7 @@
 
 ## 推荐安装方式：从 npm 安装
 
-项目发布到 npm 后，普通用户不需要下载源码，直接运行：
+项目已经发布到 npm，普通用户不需要下载源码，直接运行：
 
 ```powershell
 npm install --global @daqiang520/dqtx-cli
