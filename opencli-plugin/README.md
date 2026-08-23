@@ -15,6 +15,21 @@
 
 如果你只是想搜索博客并打开文章，优先使用 `dq`。本 README 主要介绍 `opencli dqtx ...` 这一组命令。
 
+## 使用前必须知道
+
+`dq` 和 OpenCLI 插件是两个独立入口：
+
+- 只使用 `dq`：不依赖 OpenCLI，只需要 Node.js 20 或更高版本，以及可以访问互联网。
+- 使用 `opencli dqtx ...`：必须先安装 OpenCLI 1.8.6 或更高版本，再安装本插件。
+
+如果你是普通用户，只想搜索文章并在浏览器中打开，安装并运行 `dq` 即可，不需要安装 OpenCLI。
+
+## 界面示例
+
+下面是 `dq` 的终端搜索界面：
+
+![dq 终端搜索界面](https://gitee.com/da-qiang-classmate/typora/raw/master/image/9a06d1620f57afe98c08e7fa880336b4.webp)
+
 ## 这个插件能做什么？
 
 - 查看博客最新文章；
@@ -31,11 +46,12 @@
 
 ## 安装前需要什么？
 
-需要先安装：
+根据你使用的入口，前置条件不同：
 
-- Node.js 20 或更高版本；
-- OpenCLI 1.8.6 或更高版本；
-- 可以访问互联网。
+- 使用 `dq`：Node.js 20 或更高版本，以及可以访问互联网；
+- 使用 `opencli dqtx ...`：Node.js 20 或更高版本、OpenCLI 1.8.6 或更高版本，以及可以访问互联网。
+
+下面的“安装插件”步骤只针对 `opencli dqtx ...`，不适用于单独使用的 `dq`。
 
 在终端检查 OpenCLI：
 
@@ -186,4 +202,4 @@ opencli plugin list
 | 📺 B站      | [大强同学_](https://space.bilibili.com/491358682/upload/video)                                                                                     |
 | ▶️ YouTube | [@Derek Zhao](https://www.youtube.com/@dqtx760/videos)                                                                                         |
 | 💬 公众号     | 微信搜「大强同学」或扫码关注 ↓                                                                                                                               |
-![](https://gitee.com/da-qiang-classmate/typora/raw/master/image/未命名的设计（2）.webp)
+|            |                                                                     |
