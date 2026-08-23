@@ -47,7 +47,18 @@ npm link
 dq
 ```
 
-项目发布到 npm 后，粉丝安装方式是：
+## 从 GitHub 使用
+
+当前 npm 包还没有发布。粉丝可以先从 GitHub 下载项目：
+
+```powershell
+git clone https://github.com/dqtx760/dq-cli.git
+cd dq-cli
+npm link
+dq
+```
+
+以后如果发布到 npm，安装方式会简化为：
 
 ```powershell
 npm install --global dqtx-cli
@@ -59,7 +70,7 @@ dq
 `opencli-plugin` 目录保留了给 Agent 和脚本使用的只读 OpenCLI 插件：
 
 ```powershell
-opencli plugin install file://D:\project2026\dq-cli\opencli-plugin
+opencli plugin install "file://$((Resolve-Path .\opencli-plugin).Path)"
 opencli dqtx search OpenCLI
 opencli dqtx article opencli
 ```
@@ -68,4 +79,6 @@ opencli dqtx article opencli
 
 ## 发布状态
 
-这是本地项目，当前没有绑定 GitHub 远程仓库，也没有推送到 GitHub。公开发布前，需要先确定 GitHub 仓库地址，再执行提交和推送。
+项目已公开发布到 GitHub：
+
+https://github.com/dqtx760/dq-cli

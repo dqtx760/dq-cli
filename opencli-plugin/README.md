@@ -51,12 +51,18 @@ npm install --global @jackwener/opencli
 
 ## 安装插件
 
-当前项目还没有发布到 GitHub，因此现在使用本机路径安装。
+项目已经公开发布到 GitHub：
+
+https://github.com/dqtx760/dq-cli
+
+这个仓库同时包含 `dq` 搜索器和 OpenCLI 插件。由于插件位于仓库的 `opencli-plugin` 子目录，当前请先下载项目，再从本地目录安装插件。
 
 在 PowerShell 中运行：
 
 ```powershell
-opencli plugin install file://D:\project2026\dq-cli\opencli-plugin
+git clone https://github.com/dqtx760/dq-cli.git
+cd dq-cli
+opencli plugin install "file://$((Resolve-Path .\opencli-plugin).Path)"
 ```
 
 安装成功后，检查插件是否存在：
@@ -166,7 +172,7 @@ opencli plugin list
 
 插件源代码在当前目录的 `dqtx.js` 中，插件名称是 `dqtx-blog`，OpenCLI 命令命名空间是 `dqtx`。
 
-未来如果把项目发布到 GitHub，用户可以改用 GitHub 地址安装；在仓库地址确定之前，不要复制未替换的示例地址。
+项目已公开发布到 GitHub；如果只是想使用可视化搜索器，可以在项目根目录执行 `npm link`，然后运行 `dq`。
 
 ## 关于作者
 
