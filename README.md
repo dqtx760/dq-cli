@@ -14,7 +14,7 @@
 
 下面是 `dq` 的终端搜索界面：
 
-![dq 终端搜索界面](https://gitee.com/da-qiang-classmate/typora/raw/master/image/9a06d1620f57afe98c08e7fa880336b4.webp)
+![dq 终端搜索界面](assets/dq-terminal-search.webp)
 
 ## 安装前需要什么？
 
