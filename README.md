@@ -21,12 +21,29 @@
 下面以 Windows PowerShell 为例。使用 macOS 或 Linux 时，可以在终端执行相同的命令。
 
 1. 安装 Node.js 20 或更高版本。
-2. 安装 Git。没有 Git 时，也可以在 GitHub 页面点击 **Code → Download ZIP** 下载项目并解压。
-3. 确保电脑可以访问互联网，因为首次运行需要从博客获取文章索引。
+2. 确保电脑可以访问互联网，因为首次运行需要从博客获取文章索引。
+3. 如果使用下面的 GitHub 备用安装方式，再安装 Git；没有 Git 时，也可以在 GitHub 页面点击 **Code → Download ZIP** 下载项目并解压。
 
 注意：普通用户不需要安装 OpenCLI，也不需要安装浏览器扩展。
 
-## 从 GitHub 安装
+## 推荐安装方式：从 npm 安装
+
+项目发布到 npm 后，普通用户不需要下载源码，直接运行：
+
+```powershell
+npm install --global @daqiang520/dqtx-cli
+dq
+```
+
+虽然 npm 包名是 `@daqiang520/dqtx-cli`，但安装后的命令仍然是 `dq`。
+
+检查安装是否成功：
+
+```powershell
+dq --version
+```
+
+## 备用安装方式：从 GitHub 安装
 
 打开 PowerShell，依次运行：
 

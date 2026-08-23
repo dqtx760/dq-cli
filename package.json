@@ -1,5 +1,5 @@
 {
-  "name": "dqtx-cli",
+  "name": "@daqiang520/dqtx-cli",
   "version": "0.1.0",
   "description": "在终端搜索并打开大强博客文章",
   "type": "module",
